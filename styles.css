@@ -1,6 +1,6 @@
 /* Fonts imports */
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url( 'https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+@import url( 'https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 /* Fonts imports */
 
 /* Fonts */
@@ -8,7 +8,7 @@
     font-family: "JetBrains Mono", serif;
     font-optical-sizing: auto;
     font-style: normal;
-  }
+}
 /* Fonts */
 
 body {
@@ -16,14 +16,14 @@ body {
     background-color: #212f5b;
     color: #fff;
     justify-content: center;
-    font-family: sans-serif
+    font-family: sans-serif;
 }
 #menu {
     display: flex;
     gap: 2vh;
     justify-content: center;
 }
-#menu button{
+#menu button {
     border-radius: 5px;
     border: none;
     font-size: 2.5vh;
@@ -31,7 +31,7 @@ body {
     background-color: #170101;
     font-family: "Bebas Neue", sans-serif;
 }
-#menu button:hover{
+#menu button:hover {
     transition: 1s;
     rotate: 9deg;
 }
