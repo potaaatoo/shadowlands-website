@@ -23,13 +23,17 @@ body {
     gap: 2vh;
     justify-content: center;
 }
-#menu button {
+button {
     border-radius: 5px;
     border: none;
     font-size: 1em;
     color: #d2b4b4;
     background-color: #170101;
     font-family: "Bebas Neue", sans-serif;
+}
+button:hover{
+    transition: 1s;
+    background-color: #560f0f;
 }
 #menu button:hover {
     transition: 1s;
