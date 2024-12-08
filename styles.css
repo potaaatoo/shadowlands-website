@@ -39,9 +39,6 @@ button:hover{
     transition: 1s;
     rotate: 9deg;
 }
-#statsbutton {
-    margin-top: 10vh; 
-}
 .tooltip {
     visibility: hidden;
     background-color: #333;
