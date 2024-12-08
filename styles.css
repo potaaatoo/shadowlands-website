@@ -12,7 +12,6 @@
 /* Fonts */
 
 body {
-    display: flex;
     background-color: #212f5b;
     color: #fff;
     justify-content: center;
@@ -40,7 +39,7 @@ button:hover{
     rotate: 9deg;
 }
 #statsbutton {
-    margin-top: 6vh; 
+    margin-top: 10vh; 
 }
 .tooltip {
     visibility: hidden;
