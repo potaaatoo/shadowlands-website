@@ -12,6 +12,7 @@
 /* Fonts */
 
 body {
+    display: flex;
     background-color: #212f5b;
     color: #fff;
     justify-content: center;
