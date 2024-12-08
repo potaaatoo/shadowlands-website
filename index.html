@@ -27,7 +27,25 @@
                     </div>
                     <p id="textToCopy">Ip du serveur</p>
             </header>
-            
+            <p id="ping">Calcul en cours...</p>
+            <script>
+                        async function getPing(serverUrl) {
+            const startTime = performance.now();
+            try {
+
+                await fetch(serverUrl, { method: "HEAD" });
+                const endTime = performance.now();
+                const ping = Math.round(endTime - startTime);
+                document.getElementById("ping").textContent = `Ping : ${ping} ms`;
+            } catch (error) {
+                document.getElementById("ping").textContent = "Serveur inaccessible.";
+                console.error("Erreur lors de la requête : ", error);
+            }
+        }
+
+        const serverUrl = "89.213.131.23";
+        getPing(serverUrl);
+            </script>            
             <script src='https://cdn.jsdelivr.net/npm/@widgetbot/crate@3' async defer>
                 new Crate({
                     server: '1307664641714950207',
