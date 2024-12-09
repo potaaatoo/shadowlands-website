@@ -8,7 +8,7 @@ noscript {
 }
 #header {
     position: relative;
-    background: no-repeat url("https://cdn.discordapp.com/attachments/1308179673578213438/1315769426330779659/sMcZpbO.png?ex=67589d45&is=67574bc5&hm=856ec2710b9c37987134c0dd9b412f22346328686d96fe1725d75383db4d227a&");
+    background: no-repeat url("homebackground.png");
     background-size: cover;
     width: 100vw;
     height: 100vh;
@@ -23,12 +23,4 @@ noscript {
 .image:hover {
     transition: 0.5s;
     transform: translate(-50%, -50%) scale(1.1);
-}
-#homepagetitle {
-    display: flex;
-    justify-content: center;
-    font-family: "Jersey 20", sans-serif;
-    font-weight: 400;
-    font-size: large;
-    font-style: normal;
 }
