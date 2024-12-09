@@ -1,8 +1,17 @@
 /* Fonts import */
-@import url('https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jersey+20&display=swap');
 /* Fonts import */
-body {
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#header {
     background: no-repeat url("https://wallpapers.com/images/hd/beautiful-minecraft-pink-mountain-jeiwb83n9yvg474y.jpg");
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
 }
 .image {
     position: absolute;
@@ -17,8 +26,8 @@ body {
 #homepagetitle {
     display: flex;
     justify-content: center;
-    font-family: "Jaro", sans-serif;
-    font-optical-sizing: auto;
+    font-family: "Jersey 20", sans-serif;
+    font-weight: 400;
     font-size: large;
     font-style: normal;
 }
