@@ -1,13 +1,14 @@
-/* Fonts import */
-@import url('https://fonts.googleapis.com/css2?family=Jersey+20&display=swap');
-/* Fonts import */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+noscript {
+    background-color: #1f326e;
+}
 #header {
-    background: no-repeat url("https://wallpapers.com/images/hd/beautiful-minecraft-pink-mountain-jeiwb83n9yvg474y.jpg");
+    position: relative;
+    background: no-repeat url("https://cdn.discordapp.com/attachments/1308179673578213438/1315769426330779659/sMcZpbO.png?ex=67589d45&is=67574bc5&hm=856ec2710b9c37987134c0dd9b412f22346328686d96fe1725d75383db4d227a&");
     background-size: cover;
     width: 100vw;
     height: 100vh;
@@ -17,10 +18,10 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);   
+    transform: translate(-50%, -50%);
 }
 .image:hover {
-    transition: 1s;
+    transition: 0.5s;
     transform: translate(-50%, -50%) scale(1.1);
 }
 #homepagetitle {
