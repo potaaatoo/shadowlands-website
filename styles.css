@@ -1,63 +1,20 @@
-/* Fonts imports */
-@import url( 'https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
-@import url( 'https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-/* Fonts imports */
-
-/* Fonts */
-.jetbrains-mono-100 {
-    font-family: "JetBrains Mono", serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-}
-/* Fonts */
-
+/* Fonts import */
+@import url('https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&display=swap');
+/* Fonts import */
 body {
-    display: flex;
-    background-color: #212f5b;
-    color: #fff;
-    justify-content: center;
-    font-family: sans-serif;
+    background: no-repeat url("https://wallpapers.com/images/hd/beautiful-minecraft-pink-mountain-jeiwb83n9yvg474y.jpg");
 }
-#menu {
-    display: flex;
-    gap: 2vh;
-    justify-content: center;
-}
-button {
-    border-radius: 5px;
-    border: none;
-    font-size: 1em;
-    color: #d2b4b4;
-    background-color: #170101;
-    font-family: "Bebas Neue", sans-serif;
-}
-button:hover{
-    transition: 1s;
-    background-color: #560f0f;
-}
-#menu button:hover {
-    transition: 1s;
-    rotate: 9deg;
-}
-.tooltip {
-    visibility: hidden;
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 5px 10px;
-    border-radius: 4px;
+.image {
     position: absolute;
-    transform: translateY(-150%);
-    opacity: 0;
-    transition: opacity 0.3s ease, transform 0.3s ease;
-    font-size: 0.9rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);   
 }
-
-.tooltip.show {
-    visibility: visible;
-    opacity: 1;
-    transform: translateY(-100%);
-}
-#textToCopy {
-    visibility: hidden;
+#homepagetitle {
+    display: flex;
+    justify-content: center;
+    font-family: "Jaro", sans-serif;
+    font-optical-sizing: auto;
+    font-size: large;
+    font-style: normal;
 }

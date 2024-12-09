@@ -9,50 +9,21 @@
             <title>ShadowLands PVP</title>
             <link rel="stylesheet" href="styles.css"/>
             <meta name="description" content="Rejoignez ShadowLands PVP, un serveur Minecraft PVP Faction convivial et dynamique. Participez à des batailles épiques, construisez votre faction et faites partie de notre communauté sur Discord !">
-            <meta content="ShadowLands PVP - En développement" property="og:title" />
+            <meta content="ShadowLands PVP - Dev version 2" property="og:title" />
             <meta content="En développement" property="og:description" />
             <meta content="https://shadowlandspvp.netlify.app/" property="og:url" />
-            <meta content="https://wiki.minecraft.name/images/1/1f/Minecraft-Icon.png" property="og:image" />
+            <meta content="favicon.png" property="og:image" />
             <meta content="#43B581" data-react-helmet="true" name="theme-color" />
             <script data-goatcounter="https://shadowlands.goatcounter.com/count"
         async src="//gc.zgo.at/count.js"></script>
         <noscript><h1>Ce site a besoin de JavaScript pour fonctionner correctement. Activez le dans les paramètres de votre navigateur.</h1></noscript>
         </head>
         <body>
-            <header>
-                <h1 class="jetbrains-mono-100">ShadowLands PVP</h1>
-                <hr>
-                    <div id="menu">
-                        <a href="https://discord.gg/hXJ6R92pEU"/><button>Discord</button></a>
-                        <button id="copyButton">Minecraft</button>
-                        <span id="tooltip" class="tooltip">IP copiée !</span>
-                    </div>
-                    <p id="textToCopy">Ip du serveur</p>
-            </header>
-            <br>
-            <a href="http://de1.azurhosts.com:26479/server/ShadowLands%20PVP/overview"/><button id="statsbutton">Statistiques du serveur</button></a>
-            <script src="script.js"></script>         
-            <script src='https://cdn.jsdelivr.net/npm/@widgetbot/crate@3' async defer>
-                new Crate({
-                    server: '1307664641714950207',
-                    channel: '1307698424795365418'
-                })
-            </script>
+            <div class="image">
+                <img width="200" src="https://wiki.minecraft.name/images/1/1f/Minecraft-Icon.png">
+            </div>
+            <div id="homepagetitle">
+                <h1>ShadowLands PVP</h1>
+            </div>
         </body>
-        <script>
-            document.getElementById("copyButton").addEventListener("click", function () {
-    const textToCopy = document.getElementById("textToCopy").textContent;
-
-    navigator.clipboard.writeText(textToCopy).then(() => {
-        const tooltip = document.getElementById("tooltip");
-        tooltip.classList.add("show");
-
-        setTimeout(() => {
-            tooltip.classList.remove("show");
-        }, 2000);
-    }).catch(err => {
-        console.error("Erreur lors de la copie : ", err);
-    });
-});
-        </script>
     </html>
