@@ -10,13 +10,6 @@ a {
 a:hover {
     color: inherit;
 }
-@font-face {
-    font-family: 'Minecraft';
-    src: url('Minecraft.woff2') format('woff2'),
-         url('Minecraft.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-  }
 #header {
     display: flex;
     position: relative;
@@ -26,11 +19,6 @@ a:hover {
     height: 100vh;
     overflow: hidden;
     justify-content: center;
-}
-.minecraftfont{
-    color: #fff;
-    font-family: 'Minecraft', sans-serif;
-    margin: 4%
 }
 .image {
     position: absolute;
