@@ -2,8 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color:rgba(0, 0, 0, 0.235);
-    color: #fff;
 }
 a {
     color: inherit;
