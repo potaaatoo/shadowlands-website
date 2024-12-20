@@ -27,7 +27,7 @@ a:hover {
     overflow: hidden;
     justify-content: center;
 }
-#header h1{
+.minecraftfont{
     font-family: 'Minecraft', sans-serif;
 }
 .image {
