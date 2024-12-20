@@ -28,7 +28,9 @@ a:hover {
     justify-content: center;
 }
 .minecraftfont{
+    color: #fff;
     font-family: 'Minecraft', sans-serif;
+    margin: 4%
 }
 .image {
     position: absolute;
@@ -49,8 +51,6 @@ a:hover {
     gap: 25%
 }
 .links i{
-    font-family: 'Font Awesome 6 Free';
-    font-weight: 900;
     transition: transform 0.3s ease, color 0.3s ease;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 }
