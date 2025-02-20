@@ -19,6 +19,7 @@
         </head>
         <body>
             <div id="header">
+            <h1>ShadowLƒnds PVP</h1>
             <div class="image">
                 <img style="border-radius: 10px" width="200" src="https://shadowlandspvp.netlify.app/logo.png" alt="Logo du serveur Minecraft">
             </div>
@@ -28,7 +29,44 @@
                     <i class="fa-solid fa-gamepad fa-2x"></i>
                 </div>
             </div>
-            <p>Attends que j'ai terminé de dev la homepage chef</p>
+            <div id="cards">
+                <div class="card">
+                    <h2>PVP Faction</h2>
+                    <p>
+                        Là où seules les légendes survivent ! 🌑
+Un monde sans pitié où les factions s'affrontent pour la suprématie. Entre survie hardcore et combats épiques, chaque ressource compte, chaque alliance peut basculer… Oserez-vous entrer dans l'ombre et forger votre destin ? 🔥
+                    </p>
+                </div>
+                <div class="card" style="height: 21vh;">
+                    <h2>Surive</h2>
+                    <p>Où la survie est un art… et les autres joueurs, des obstacles vivants ! 😈
+                        Ici, pas de pitié : la faim, les monstres et les pièges sournois de la nature ne suffisaient pas, alors on a ajouté des joueurs encore plus vicieux. Construisez, cachez vos coffres (<i>sérieusement, cachez-les bien</i>), et tentez de ne pas finir en steak pour une autre faction. Bonne chance, vous en aurez besoin ! 🔥</p>
+                </div>
+                <div class="card" style="height: 21vh;">
+                    <h2>Communauté</h2>
+                    <p>Sur Shadowlands, la survie ne se joue pas en solo ! Rejoins notre serveur Discord pour échanger des bons plans, forger des alliances (ou trahir discrètement 👀) et participer à des événements épiques. Que tu sois un guerrier redoutable, un fermier pacifiste ou un marchand un peu louche, tu trouveras toujours ta place dans notre communauté ! 💬🔥</p>
+                </div>
+                <div class="card" style="height: 4vh; width: 100vw; background: #4caf50; color:black;">
+                    <p id="players-online" style="align-self:center">Chargement...</p>
+                    <script>
+                    function updatePlayerCount() {
+                        fetch("https://api.mcsrvstat.us/2/mn04.azurhosts.com:25671")
+                            .then(response => response.json())
+                            .then(data => {
+                                document.getElementById("players-online").innerText = 
+                                    data.online ? `Joueurs en ligne : ${data.players.online}/200` : "Serveur hors ligne";
+                            })
+                            .catch(error => console.log("Erreur : ", error));
+                    }
+                    
+                    // Met à jour immédiatement au chargement de la page
+                    updatePlayerCount();
+                    
+                    // Rafraîchit toutes les 30 secondes
+                    setInterval(updatePlayerCount, 30000);
+                    </script>
+                </div>
+            </div>
         </body>
         <script src='https://cdn.jsdelivr.net/npm/@widgetbot/crate@3' async defer>
             new Crate({
