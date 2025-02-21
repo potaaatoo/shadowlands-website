@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'minecraft'; /*a name to be used later*/
-    src: url('Minecraft.woff'); /*URL to font*/
+    src: url('https://cdn.jsdelivr.net/gh/potaaatoo/shadowlands-website@main/Minecraft.woff'); /*URL to font*/
 }
 
 *{
@@ -18,7 +18,7 @@ a:hover {
 #header {
     display: flex;
     position: relative;
-    background: no-repeat url("homebackground.png");
+    background: no-repeat url("https://cdn.jsdelivr.net/gh/potaaatoo/shadowlands-website@main/homebackground.png");
     background-size: cover;
     width: 100vw;
     height: 100vh;
